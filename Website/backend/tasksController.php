@@ -3,7 +3,7 @@
 
     $title = $_POST["title"];
     $description = $_POST["description"];
-    $department = $_POST["department"];
+    $section = $_POST["section"];
     $status = $_POST["status"];
 
     // Test
@@ -11,7 +11,7 @@
     echo "<br>";
     echo $description;
     echo "<br>";
-    echo $department;
+    echo $section;
     echo "<br>";
     echo $status;
 
