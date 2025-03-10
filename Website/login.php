@@ -9,10 +9,10 @@
 </head>
 <body>
     <form action="backend/loginController.php" method="POST">
-        <label for="username">Username:</label>
-        <input type="text" name="username" placeholder="user" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="User@mail.com" required>
         <label for="password">Password:</label>
-        <input type="password" name="password" placeholder="pass" required>
+        <input type="password" name="password" placeholder="Wachtwoord" required>
         <input type="submit" value="login">
     </form>
 
