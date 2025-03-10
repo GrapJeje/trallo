@@ -25,3 +25,4 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 -- Dummy data invoegen
 INSERT INTO `user` (`email`, `password`) VALUES ('test@example.com', 'hashedpassword1'); --maak hier je eigen acount aan
+--https://www.md5hashgenerator.com/ om je wachtwoord te hashen, kies SHA1
