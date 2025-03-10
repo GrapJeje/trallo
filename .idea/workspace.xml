@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f9d6ed56-b2a4-4be6-95cc-257d58bbaab6" name="Changes" comment="Updated .gitignore and added a loginHeader to login&#10;&#10;Users can now login and logout" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/account" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GrapJeje&quot;
+  }
+}</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/GrapJeje/trallo.git&quot;,
+    &quot;accountId&quot;: &quot;0add1a23-751e-4711-85ff-375c91cf0500&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\Users\Jason\.config\herd-lite\bin\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2ta3NnqCgatgOuJq1DckjUWf6KG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PS-243.22562.233" />
+        <option value="bundled-php-predefined-a98d8de5180a-7980c7aaca61-com.jetbrains.php.sharedIndexes-PS-243.22562.233" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9d6ed56-b2a4-4be6-95cc-257d58bbaab6" name="Changes" comment="" />
+      <created>1740576321040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740576321040</updated>
+      <workItem from="1740576322132" duration="662000" />
+      <workItem from="1741594964074" duration="2291000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added sql doc file to repo.&#10;&#10;Add the commands to make the database if we decide how we do the database.">
+      <option name="closed" value="true" />
+      <created>1740576575666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740576575666</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added a basic login system&#10;&#10;User can log in or get an msg if the input is wrong">
+      <option name="closed" value="true" />
+      <created>1741596168409</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741596168409</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Refactored username to email">
+      <option name="closed" value="true" />
+      <created>1741596686695</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741596686695</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated .gitignore and added a loginHeader to login&#10;&#10;Users can now login and logout">
+      <option name="closed" value="true" />
+      <created>1741597219311</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741597219311</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added sql doc file to repo.&#10;&#10;Add the commands to make the database if we decide how we do the database." />
+    <MESSAGE value="Added a basic login system&#10;&#10;User can log in or get an msg if the input is wrong" />
+    <MESSAGE value="Refactored username to email" />
+    <MESSAGE value="Updated .gitignore and added a loginHeader to login&#10;&#10;Users can now login and logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated .gitignore and added a loginHeader to login&#10;&#10;Users can now login and logout" />
+  </component>
+</project>
