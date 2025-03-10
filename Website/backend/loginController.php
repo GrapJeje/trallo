@@ -3,20 +3,20 @@
 global $conn, $base_url;
 session_start();
 
-$username = $_POST['username'];
+$email = $_POST['email'];
 $password = $_POST['password'];
 
-if (empty($username) || empty($password))
+if (empty($email) || empty($password))
 {
     $msg = "Vul alle velden in";
     header("Location: $base_url/login.php?msg=$msg");
 }
 
 require_once 'conn.php';
-$query = "SELECT * FROM users WHERE username = :username";
+$query = "SELECT * FROM users WHERE email = :email";
 $statement = $conn->prepare($query);
 $statement->execute([
-    ":username" => $username
+    ":email" => $email
 ]);
 $user = $statement->fetch(PDO::FETCH_ASSOC);
 
@@ -27,6 +27,6 @@ if ($statement->rowCount() < 1 || !password_verify($password, $user['password'])
 }
 
 $_SESSION['user_id'] = $user['id'];
-$_SESSION['user_name'] = $user['username'];
+$_SESSION['user_email'] = $user['email'];
 
 header("Location: $base_url/tasks/index.php");
