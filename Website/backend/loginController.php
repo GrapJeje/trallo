@@ -13,7 +13,7 @@ if (empty($email) || empty($password))
 }
 
 require_once 'conn.php';
-$query = "SELECT * FROM users WHERE email = :email";
+$query = "SELECT * FROM user WHERE email = :email";
 $statement = $conn->prepare($query);
 $statement->execute([
     ":email" => $email
