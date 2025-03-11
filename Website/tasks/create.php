@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <h1>Taak toevoegen</h1>
 <p>Voeg met het onderstaande formulier een nieuwe taak toe</p>
 

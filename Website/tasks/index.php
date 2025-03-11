@@ -10,6 +10,20 @@
     <link rel="stylesheet" href="../public/css/tasks/view.css">
 </head>
 <body>
+
+<?php
+session_start();
+require __DIR__ . "/../backend/conn.php";
+
+global $conn;
+
+$query = "SELECT * FROM planning_board";
+$statement = $conn->prepare($query);
+$statement->execute();
+
+$todos = $statement->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <div class="container">
     <div class="view-container">
 
@@ -20,14 +34,28 @@
         <div class="view-child">
             <div class="view-read">
                 <h1>Taken</h1>
-                <div class="view-read-card">
-                    <p class="view-read-organisatie">Horeca</p>
-                    <div class="view-read-card-container">
-                        <p class="view-read-title">Test</p>
-                        <p class="view-read-description">Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test Test test </p>
-                        <p class="view-read-status">To Do</p>
-                    </div>
-                </div>
+
+                <?php
+                // Filter todos by user_id
+                $filteredTodos = array_filter($todos, function($todo) {
+                    return $todo['user_id'] == $_SESSION['user_id'];
+                });
+
+                if (empty($filteredTodos)):
+                    ?>
+                    <p>Geen taken gevonden</p>
+                <?php else: ?>
+                    <?php foreach ($filteredTodos as $todo): ?>
+                        <div class="view-read-card">
+                            <p class="view-read-organisatie"><?php echo $todo['section']; ?></p>
+                            <div class="view-read-card-container">
+                                <p class="view-read-title"><?php echo $todo['title']; ?></p>
+                                <p class="view-read-description"><?php echo $todo['description']; ?></p>
+                                <p class="view-read-status"><?php echo $todo['status']; ?></p>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </div>
         </div>
     </div>
