@@ -8,7 +8,7 @@
     <title>Trallo | Login</title>
 </head>
 <body>
-    <form action="backend/loginController.php" method="POST">
+    <form action="backend/Controllers/loginController.php" method="POST">
         <label for="email">Email:</label>
         <input type="email" name="email" placeholder="User@mail.com" required>
         <label for="password">Password:</label>
