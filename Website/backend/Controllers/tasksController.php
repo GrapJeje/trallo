@@ -19,6 +19,8 @@
     echo "<br>";
     echo $status;
 
+
+    // Voeg taak toe
     require_once "../conn.php";
 
     $query = "INSERT INTO planning_board (user_id, title, description, section, status)
