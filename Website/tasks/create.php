@@ -5,7 +5,7 @@
 <h1>Taak toevoegen</h1>
 <p>Voeg met het onderstaande formulier een nieuwe taak toe</p>
 
-<form action="../backend/tasksController.php" method="POST">
+<form action="../backend/Controllers/tasksController.php" method="POST">
     <label for="title">Titel</label>
     <input type="text" id="title" name="title" required>
 
