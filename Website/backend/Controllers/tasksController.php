@@ -8,18 +8,6 @@
     $section = $_POST["section"];
     $status = $_POST["status"];
 
-    // Test
-    echo $_SESSION["user_id"];
-    echo "<br>";
-    echo $title;
-    echo "<br>";
-    echo $description;
-    echo "<br>";
-    echo $section;
-    echo "<br>";
-    echo $status;
-
-
     // Voeg taak toe
     require_once "../conn.php";
 
@@ -34,5 +22,7 @@
         ":description" => $description,
         ":section" => $section,
         ":status" => $status,
-    ])
+    ]);
+
+    header("Location: $base_url/tasks/");
 ?>
