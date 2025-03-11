@@ -8,6 +8,10 @@
     <title>Trallo | Login</title>
 </head>
 <body>
+    <?php
+        require_once 'layout/header.php';
+        require_once 'layout/footer.php';
+    ?>
 <form action="backend/Controllers/registerController.php" method="POST">
     <label for="email">Email:</label>
     <input type="email" name="email" placeholder="User@mail.com" required>
